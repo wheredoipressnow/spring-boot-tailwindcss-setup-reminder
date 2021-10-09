@@ -28,3 +28,9 @@ Create app.css and inject tailwind's styles
 @tailwind components;
 @tailwind utilities;
 ```
+
+Import stylesheets in template
+```html
+<link href="../static/css/app.css" rel="stylesheet" th:href="@{/css/app.css}">
+<link href="../static/css/tailwind.css" rel="stylesheet" th:href="@{/css/tailwind.css}">
+```
